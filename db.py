@@ -27,7 +27,17 @@ db_cursor.execute("""
 
 db_cursor.execute("""
     INSERT INTO users  (first_name, last_name)
-    VALUES ('Bunyod', 'Naimov')""")
+    VALUES ('Bunyod', 'Naimov')
+""")
+
+
+db_cursor.execute("""
+INSERT INTO products (title, price) VALUES ('Bunyod', '200')
+""")
+
+db_cursor.execute("""
+INSERT INTO users ("first_name", "last_name") 
+VALUES("Alusha", "Abdurahmon")""")
 
 db_connect.commit()
 
